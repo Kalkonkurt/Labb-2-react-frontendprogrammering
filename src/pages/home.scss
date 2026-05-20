@@ -1,0 +1,34 @@
+@use '../scss/variables' as *;
+
+.home {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: calc(100vh - #{$navbar-height});
+	background-image:
+		linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/pexels-element5-1550337.jpg');
+	background-size: cover;
+	background-position: center;
+
+	h1 {
+		text-align: center;
+		color: #ffffff;
+		text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+	}
+
+	a {
+		display: block;
+		width: fit-content;
+		margin: 1rem auto;
+		padding: 1.5rem 1.75rem;
+		background-color: #b15619;
+		color: #ffffff;
+		text-decoration: none;
+		border-radius: 4px;
+
+		&:hover {
+			background-color: #b82b20;
+		}
+	}
+}

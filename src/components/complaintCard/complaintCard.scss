@@ -1,0 +1,40 @@
+.complaint-card {
+	display: flex;
+	flex-direction: column;
+	background-color: #ffffff;
+	padding: 1rem 1.5rem;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+	max-width: 80%;
+	margin: 0 auto;
+	gap: 1rem;
+	border: 2px solid transparent;
+	transition: border-color 0.2s ease;
+
+	&:hover {
+		border-color: #c8631fc3;
+	}
+
+	img {
+		width: 100%;
+		height: 300px;
+		object-fit: cover;
+		display: block;
+	}
+
+	h2 {
+		margin: 0;
+		font-size: 1.1rem;
+		color: #262626;
+	}
+
+	p {
+		margin: 0;
+		color: #555555;
+	}
+}
+.complaint-card--no-hover {
+	&:hover {
+		border-color: transparent;
+		box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+	}
+}

@@ -1,0 +1,26 @@
+main {
+  background-color: #555555;
+}
+
+.one-complaint__card {
+  max-width: 60%;
+  margin: 2rem auto;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.one-complaint__back-button {
+  padding: 0.8rem 1.2rem;
+  margin: 1.5rem;
+  background-color: #fff;
+  color: #000000;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.one-complaint__back-button:hover {
+  transition: background-color 0.3s ease;
+  background-color: #ffad4f;
+}/*# sourceMappingURL=oneComplaint.css.map */

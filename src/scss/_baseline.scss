@@ -1,0 +1,15 @@
+@use 'variables' as *;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+main {
+	min-height: calc(100vh - #{$navbar-height});
+}

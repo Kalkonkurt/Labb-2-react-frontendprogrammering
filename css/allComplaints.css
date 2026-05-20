@@ -1,0 +1,27 @@
+.all-complaints {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem 0;
+  padding: 2rem 4rem;
+  min-height: calc(100vh - 60px);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/pexels-ines-bahr-478690-7470557.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.all-complaints__loading {
+  color: #ffffff;
+  background-color: #555555;
+  font-size: 2rem;
+  text-align: center;
+  padding: 1vh;
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.all-complaints h1 {
+  grid-column: 1/-1;
+  text-align: center;
+  color: #ffad4f;
+}/*# sourceMappingURL=allComplaints.css.map */
