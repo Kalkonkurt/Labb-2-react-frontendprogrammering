@@ -4,7 +4,9 @@ import './navbar.scss';
 export default function navbar() {
 	return (
 		<div className="navbar">
-			<h1 className="navbar__logo">Felkollen</h1>
+			<Link to="/" className="navbar__logo">
+				Felkollen
+			</Link>
 			<nav className="navbar__links">
 				<Link to="/" className="navbar__link">
 					Hem

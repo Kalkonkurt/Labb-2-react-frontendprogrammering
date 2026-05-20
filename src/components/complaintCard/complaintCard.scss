@@ -1,17 +1,19 @@
 .complaint-card {
 	display: flex;
 	flex-direction: column;
-	background-color: #ffffff;
+	background-color: #ffffffe9;
+	border-radius: 7px;
 	padding: 1rem 1.5rem;
 	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 	max-width: 80%;
 	margin: 0 auto;
 	gap: 1rem;
-	border: 2px solid transparent;
+	border: 4px solid transparent;
 	transition: border-color 0.2s ease;
 
 	&:hover {
-		border-color: #c8631fc3;
+		border-color: #eb9f49;
+		cursor: pointer;
 	}
 
 	img {

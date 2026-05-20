@@ -6,4 +6,9 @@
 
 body {
   font-family: sans-serif;
+}
+
+main {
+  min-height: calc(100vh - 60px);
+  background-color: #555555;
 }/*# sourceMappingURL=main.css.map */
