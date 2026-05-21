@@ -1,4 +1,5 @@
 @use 'variables' as *;
+@use 'sass:map';
 
 * {
 	margin: 0;
@@ -13,4 +14,10 @@ body {
 main {
 	min-height: calc(100vh - #{$navbar-height});
 	background-color: #555555;
+}
+
+@each $name, $color in $colors {
+	.bg-#{$name} {
+		background-color: $color;
+	}
 }

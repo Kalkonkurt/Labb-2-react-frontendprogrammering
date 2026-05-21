@@ -1,11 +1,12 @@
+@use '../../scss/mixins' as *;
+
 .complaint-card {
+	@include card;
 	height: 450px;
 	display: flex;
 	flex-direction: column;
 	background-color: #ffffffe9;
 	border-radius: 7px;
-	padding: 1rem 1.5rem;
-	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 	gap: 1rem;
 	border: 4px solid transparent;
 	transition: border-color 0.2s ease;

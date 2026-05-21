@@ -2,6 +2,7 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/pexels-ines-bahr-478690-7470557.jpg");
   background-size: cover;
   background-position: center;
+  min-height: 100vh;
   color: #ffffff;
   padding: 2rem;
   margin: 0 auto;
@@ -17,6 +18,13 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 4rem 2rem;
 }
+
+.profile-card {
+  height: 450px;
+  width: 550px;
+  overflow: hidden;
+}
+
 .profile__edit-button {
   background-color: #666666;
   color: #ffffff;
@@ -24,14 +32,22 @@
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  width: 100%;
+  width: fit-content;
+  margin: 0.5rem 0.5rem;
 }
 .profile__edit-button:hover {
   background-color: #9c4b16;
 }
 
-.profile-card {
-  height: 450px;
-  width: 550px;
-  overflow: hidden;
+.profile__delete-button {
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: fit-content;
+  margin: 0.5rem 0.5rem;
+}
+.profile__delete-button:hover {
+  background-color: #9c4b16;
 }/*# sourceMappingURL=profile.css.map */

@@ -3,7 +3,7 @@ import './navbar.scss';
 
 export default function navbar() {
 	return (
-		<div className="navbar">
+		<div className="navbar bg-dark">
 			<Link to="/" className="navbar__logo">
 				Felkollen
 			</Link>

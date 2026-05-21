@@ -11,4 +11,20 @@ body {
 main {
   min-height: calc(100vh - 60px);
   background-color: #555555;
+}
+
+.bg-primary {
+  background-color: #666666;
+}
+
+.bg-accent {
+  background-color: #ffad4f;
+}
+
+.bg-danger {
+  background-color: #b82b20;
+}
+
+.bg-dark {
+  background-color: #171717;
 }/*# sourceMappingURL=main.css.map */

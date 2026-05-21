@@ -1,3 +1,6 @@
+@use '../scss/variables' as *;
+@use 'sass:map';
+
 .one-complaint__card {
 	max-width: 40%;
 	height: 500px;
@@ -22,6 +25,6 @@
 
 	&:hover {
 		transition: background-color 0.3s ease;
-		background-color: #ffad4f;
+		background-color: map.get($colors, 'accent');
 	}
 }

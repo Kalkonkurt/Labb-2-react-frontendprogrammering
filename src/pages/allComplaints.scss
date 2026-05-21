@@ -1,5 +1,6 @@
 @use '../scss/variables' as *;
 @use '../scss/mixins' as *;
+@use 'sass:map';
 
 .all-complaints {
 	@include card-grid;
@@ -13,7 +14,7 @@
 
 	&__loading {
 		color: #ffffff;
-		background-color: #555555;
+		background-color: map.get($colors, 'primary');
 		font-size: 2rem;
 		text-align: center;
 		padding: 1vh;

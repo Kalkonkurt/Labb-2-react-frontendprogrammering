@@ -2,7 +2,11 @@
   display: flex;
   justify-content: center;
   padding: 4rem 2rem;
-  color: #ffffff;
+  color: #ffad4f;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/pexels-ines-bahr-478690-7470557.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
 }
 .submit-complaint__form {
   display: flex;
@@ -10,9 +14,6 @@
   gap: 1rem;
   width: 100%;
   max-width: 500px;
-}
-.submit-complaint__form h2 {
-  color: #ffffff;
 }
 .submit-complaint__form input,
 .submit-complaint__form textarea {

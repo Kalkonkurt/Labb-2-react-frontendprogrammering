@@ -26,6 +26,11 @@ export default function Profile() {
 		fetchComplaints();
 	}, []);
 
+	const handleDelete = async (id: string) => {
+		await axios.delete(`https://6a035fe72afe8349b4b5252a.mockapi.io/api/complaints/${id}`);
+		setComplaints((prev) => prev.filter((c) => c.id !== id));
+	};
+
 	if (loading) return <p>Laddar...</p>;
 
 	return (
@@ -43,6 +48,12 @@ export default function Profile() {
 								onClick={() => navigate(`/edit/${complaint.id}`)}
 							>
 								Redigera
+							</button>
+							<button
+								className="profile__delete-button bg-danger"
+								onClick={() => handleDelete(complaint.id)}
+							>
+								Radera
 							</button>
 						</div>
 					))
