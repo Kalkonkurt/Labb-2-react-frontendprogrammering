@@ -5,6 +5,7 @@ import AllComplaints from './pages/AllComplaints';
 import OneComplaint from './pages/OneComplaint';
 import SubmitComplaint from './pages/SubmitComplaint';
 import Profile from './pages/Profile';
+import EditComplaint from './pages/EditComplaint';
 import NotFound from './components/NotFound';
 
 const router = createBrowserRouter([
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
 			{
 				path: 'profile',
 				element: <Profile />
+			},
+			{
+				path: 'edit/:id',
+				element: <EditComplaint />
 			}
 		]
 	},

@@ -6,10 +6,9 @@ interface Props {
 	onClick?: () => void;
 	className?: string;
 	noHover?: boolean;
-	onEdit?: () => void;
 }
 
-export default function ComplaintCard({ complaint, onClick, className, noHover, onEdit }: Props) {
+export default function ComplaintCard({ complaint, onClick, className, noHover }: Props) {
 	return (
 		<div
 			className={`complaint-card ${className ?? ''} ${noHover ? 'complaint-card--no-hover' : ''}`}
@@ -18,16 +17,6 @@ export default function ComplaintCard({ complaint, onClick, className, noHover, 
 			<h2>{complaint.title}</h2>
 			<p>{complaint.description}</p>
 			<img src={complaint.imageUrl} alt={complaint.title} />
-			{onEdit && (
-				<button
-					onClick={(e) => {
-						e.stopPropagation();
-						onEdit();
-					}}
-				>
-					Redigera
-				</button>
-			)}
 		</div>
 	);
 }
