@@ -7,6 +7,7 @@ import './profile.scss';
 export default function Profile() {
 	const [complaints, setComplaints] = useState<Complaint[]>([]);
 	const [loading, setLoading] = useState(true);
+	const [editingComplaint, setEditingComplaint] = useState<Complaint | null>(null);
 	const userId = localStorage.getItem('userId');
 
 	useEffect(() => {
@@ -24,6 +25,19 @@ export default function Profile() {
 		fetchComplaints();
 	}, []);
 
+	const handleEdit = async (e: React.SyntheticEvent<HTMLFormElement>) => {
+		e.preventDefault();
+		if (!editingComplaint) return;
+
+		await axios.put(
+			`https://6a035fe72afe8349b4b5252a.mockapi.io/api/complaints/${editingComplaint.id}`,
+			editingComplaint
+		);
+
+		setComplaints((prev) => prev.map((c) => (c.id === editingComplaint.id ? editingComplaint : c)));
+		setEditingComplaint(null);
+	};
+
 	if (loading) return <p>Laddar...</p>;
 
 	return (
@@ -34,7 +48,42 @@ export default function Profile() {
 					<p>Du har inga klagomål än.</p>
 				) : (
 					complaints.map((complaint) => (
-						<ComplaintCard key={complaint.id} complaint={complaint} noHover />
+						<div key={complaint.id}>
+							<ComplaintCard
+								complaint={complaint}
+								noHover
+								className="profile-card"
+								onEdit={() => setEditingComplaint(complaint)}
+							/>
+							{editingComplaint?.id === complaint.id && (
+								<div className="profile__modal">
+									<form onSubmit={handleEdit}>
+										<input
+											value={editingComplaint.title}
+											onChange={(e) =>
+												setEditingComplaint({
+													...editingComplaint,
+													title: e.target.value
+												})
+											}
+										/>
+										<textarea
+											value={editingComplaint.description}
+											onChange={(e) =>
+												setEditingComplaint({
+													...editingComplaint,
+													description: e.target.value
+												})
+											}
+										/>
+										<button type="submit">Spara</button>
+										<button type="button" onClick={() => setEditingComplaint(null)}>
+											Avbryt
+										</button>
+									</form>
+								</div>
+							)}
+						</div>
 					))
 				)}
 			</div>

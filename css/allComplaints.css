@@ -1,7 +1,7 @@
 .all-complaints {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 4rem 0;
+  gap: 4rem 2rem;
   padding: 2rem 4rem;
   min-height: calc(100vh - 60px);
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/pexels-ines-bahr-478690-7470557.jpg");

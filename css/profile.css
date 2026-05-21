@@ -1,13 +1,48 @@
 .profile {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/pexels-ines-bahr-478690-7470557.jpg");
+  background-size: cover;
+  background-position: center;
   color: #ffffff;
   padding: 2rem;
   margin: 0 auto;
 }
 .profile h1 {
-  margin: 1rem 3rem;
+  grid-column: 1/-1;
+  text-align: center;
+  color: #ffad4f;
+  margin-bottom: 3rem;
 }
 .profile__cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 4rem 0;
+  gap: 4rem 2rem;
+}
+.profile__modal {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: #333;
+  padding: 1rem;
+}
+.profile__modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.profile__modal form input,
+.profile__modal form textarea {
+  max-width: 30%;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+.profile__modal form button {
+  width: fit-content;
+}
+
+.profile-card {
+  height: 450px;
+  width: 550px;
+  overflow: hidden;
 }/*# sourceMappingURL=profile.css.map */

@@ -21,7 +21,6 @@ export default function navbar() {
 					Profil
 				</Link>
 			</nav>
-			<button className="navbar__toggle-theme"> Toggle Theme</button>
 		</div>
 	);
 }

@@ -1,5 +1,6 @@
 @use '../scss/variables' as *;
 @use '../scss/mixins' as *;
+
 .all-complaints {
 	@include card-grid;
 	padding: 2rem 4rem;

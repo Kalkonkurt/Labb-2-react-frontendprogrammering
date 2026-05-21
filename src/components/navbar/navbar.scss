@@ -3,7 +3,7 @@
 	justify-content: space-between;
 	align-items: center;
 	padding: 1rem 2rem;
-	background-color: #232323;
+	background-color: #171717;
 	color: #fff;
 
 	&__logo {
@@ -12,18 +12,7 @@
 		color: #ffad4f;
 		text-decoration: none;
 	}
-	&__toggle-theme {
-		background-color: #666666;
-		color: #fff;
-		border: none;
-		padding: 0.5rem 1rem;
-		cursor: pointer;
 
-		&:hover {
-			transition: background-color 0.3s ease;
-			background-color: #9c4b16;
-		}
-	}
 	&__link {
 		text-decoration: none;
 		padding: 0.5rem 1rem;
