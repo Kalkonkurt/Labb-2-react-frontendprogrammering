@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../src/pages/allComplaints.scss"],"names":[],"mappings":"AAEA;EACC;EACA;EACA;EACA;EACA;EACA,kBACC;EAED;EACA;;AAEA;EACC;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAED;EACC;EACA;EACA","file":"allComplaints.css"}
+{"version":3,"sourceRoot":"","sources":["../src/pages/allComplaints.scss","../src/scss/_mixins.scss"],"names":[],"mappings":"AAEA;ECWC;EACA;EACA;EDXA;EACA;EACA,kBACC;EAED;EACA;;AAEA;EACC;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAED;EACC;EACA;EACA","file":"allComplaints.css"}

@@ -10,3 +10,8 @@
 	align-items: center;
 	justify-content: center;
 }
+@mixin card-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 4rem 0;
+}
