@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
 import axios from 'axios';
-import './submitComplaint.scss';
+import '../scss/submitComplaint.scss';
 
 export default function SubmitComplaint() {
 	const [formData, setFormData] = useState({ title: '', description: '' });

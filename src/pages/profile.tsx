@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import type { Complaint } from '../types/complaint';
 import ComplaintCard from '../components/complaintCard/ComplaintCard';
-import './profile.scss';
+import '../scss/profile.scss';
 
 export default function Profile() {
 	const [complaints, setComplaints] = useState<Complaint[]>([]);

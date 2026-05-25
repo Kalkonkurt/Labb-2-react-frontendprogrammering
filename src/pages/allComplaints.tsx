@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import type { Complaint } from '../types/complaint';
-import './allComplaints.scss';
+import '../scss/allComplaints.scss';
 import ComplaintCard from '../components/complaintCard/ComplaintCard';
 
 export default function AllComplaints() {

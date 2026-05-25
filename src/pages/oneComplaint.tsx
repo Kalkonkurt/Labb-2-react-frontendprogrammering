@@ -4,7 +4,7 @@ import axios from 'axios';
 import type { Complaint } from '../types/complaint';
 import ComplaintCard from '../components/complaintCard/ComplaintCard';
 
-import './oneComplaint.scss';
+import '../scss/oneComplaint.scss';
 
 export default function oneComplaint() {
 	const { id } = useParams();

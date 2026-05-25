@@ -1,5 +1,5 @@
 import type { Complaint } from '../../types/complaint';
-import './complaintCard.scss';
+import '../../scss/complaintCard.scss';
 
 interface Props {
 	complaint: Complaint;
